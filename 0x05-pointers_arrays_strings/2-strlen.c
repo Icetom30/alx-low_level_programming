@@ -1,28 +1,20 @@
+#include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * main - Entry point
- *
- * Return: Always return 0
+ * _strlen - output the lenght on a string
+ * @s: the string to be checked
+ * Return: Always return c
  */
 
-int main(void)
+int _strlen(char *s)
 {
-	char c;
-	char d;
+	int c;
 
-
-	for (c = 'a'; c <= 'z'; c++)
+	for (c = 0; s[c] != '\0'; c++)
 	{
-		putchar(c);
+		continue;
 	}
 
-	for (d = 'A'; d <= 'Z'; d++)
-	{
-		putchar(d);
-	}
-	putchar('\n');
-	return (0);
+	return (c);
 }
-
